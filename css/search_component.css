@@ -1,0 +1,63 @@
+
+ 
+ 
+
+/* Dark */
+.searchdiv
+{
+     /* margin-left: 500px;*/
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.dark{
+
+ 	width:318px;
+	padding:15px;
+	border-radius:5px;	
+    display: inline-block;
+    text-align: left;
+}
+.dark input[type="text"] {
+    border: none;
+     width: 75%;
+	float:left;
+	border-radius: 13px 0 0 13px;
+    height: 26px;
+    line-height: 26px;
+  padding: 0px 0px 0 0px;
+  padding-left: 20px;
+  background: white;
+  border-width: 0px;
+  border-style: none;
+  border-color: #a8acbc #babdcc #c0c3d2;
+    
+
+}
+.dark input[type="submit"] {
+    background: none repeat scroll 0 0 #DDD;
+    border:   none;
+    color: #000;
+    cursor: pointer;
+    height: 26px;
+	line-height:26px;
+    padding: 0px;
+ 	border-radius: 0 13px 13px 0;
+      border-width: 0px;
+
+}
+ 
+
+.dark input:focus {
+    outline: none;
+    border-color: #66b1ee;
+    -webkit-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
+    -moz-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
+    -ms-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
+    -o-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
+    box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
+}
+
+

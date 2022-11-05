@@ -1,0 +1,48 @@
+<script    src="http://code.jquery.com/jquery-latest.js" type="text/javascript"  ></script> 
+
+<script>
+$( document ).ready(function() {
+    search_solr("microservices");
+
+});
+
+
+
+function search_solr(query) {
+    if (query.length == 0) {
+         console.log("Invalid query");
+        return;
+    }
+
+    //callback function on_data() 
+    var url='http://getbook.co:8181/solr/db/select?q=TITLE%3A'+query+'&q.op=AND&wt=json&rows=100&indent=true&callback=?&json.wrf=on_data';
+
+
+    //var url='http://getbook.co:8181/solr/db/select?q='+query+'&version=2.2&start=0&rows=50&indent=on&wt=json&callback=?&json.wrf=on_data';
+    console.log(url);
+    $.getJSON(url);
+}
+
+
+function on_data(data) {
+        console.log(data);
+        
+        
+
+        var docs = data.response.docs;
+        var count = 0;
+        $.each(docs, function(i, item) {
+            var hash = item.id;
+           
+              console.log( item.TITLE + "-" + item.SITE  );
+              
+          
+        });
+    }
+
+
+
+
+
+
+</script>

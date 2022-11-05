@@ -1,0 +1,36 @@
+<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"  ></script> 
+
+<script>
+function ajaxCall(postdata, on_success) {
+  
+
+    $.ajax({
+      type: "POST",
+      dataType: 'jsonp',
+
+      cache: false,
+      url: "http://hyperbook.co/core/service_extn/dbaccess.php",
+      data: postdata,
+      success: logger 
+    });
+} 
+ var logger = function(result){console.log("***********"+result); };
+ 
+ 
+function addurl()
+
+{
+	//{"action":"ADD","username":"arvind","site":"www.test1.com" ,"title":"TESTING","folder":"fold1", "notes":"abc","tags":"abc","hash":"7588b0d67d812ff8696c07ad90ddbb03a6184f85"} 
+	console.log({action:"ADD",username:"arvind",site:"www.test1.com" ,title:"TESTING",folder:"fold1", notes:"abc",tags:"abc",hash:"7588b0d67d812ff8696c07ad90ddbb03a6184f85"} );
+	ajaxCall({action:"ADD",username:"arvind",site:"www.test1.com" ,title:"TESTING",folder:"fold1", notes:"abc",tags:"abc",hash:"7588b0d67d812ff8696c07ad90ddbb03a6184f85"} );
+} 
+$( document ).ready(function() {
+	console.log("ready");
+	 
+	addurl();
+	 
+	
+});
+</script>
+
+See console log

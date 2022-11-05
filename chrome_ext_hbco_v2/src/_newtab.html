@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Hyperbook New Tab</title>
+    <link rel="stylesheet" href="newtab.css">
+    <link rel="stylesheet" href="custom.css">
+
+</head>
+
+<body>
+
+    <div class="bg-holder">
+        <div class="bg">&nbsp;</div>
+        <div class="overlay">&nbsp;</div>
+        <br>
+    </div>
+
+    <div class="main-content">
+
+        <div class="options">
+            <img src="/resources/images/ent-apps.svg" alt="" class="apps">
+            <img src="/resources/images/ent-history.svg" alt="" class="history">
+            <img src="/resources/images/ent-bookmarks.svg" alt="" class="chrome-bookmarks">
+            <img src="/resources/images/ent-settings.svg" alt="" class="settings">
+            <span class="settings-holder">
+
+                <ul id="optionsMenu" class="hidden">
+                    <li id="restore">Restore Removed Top Sites</li>
+                    <li id="custombgurlholder"><input placeholder="Custom Background URL" id="custombgurl" type="text"/></li>
+                    <li id="restorebg">Restore Daily Background</li>
+                    <li id="like">ENT on Facebook</li>
+                    <li id="follow">ENT on Twitter</li>
+                    <li id="developer">About Developer</li>
+                </ul>
+
+            </span>
+
+        </div>
+
+
+        <div class="onoffswitch">
+
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+            <label class="onoffswitch-label" for="myonoffswitch">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+
+        </div>
+
+        <div class="text-center"></div>
+
+        <div class="filter-menu">
+            M
+        </div>
+
+        <div class="text-center">
+
+            <div id="filter"> 
+                Recent Shuffle 
+                <span class="folder">Videos</span>
+            </div>
+
+        </div>
+        
+        <div class="search-container jq-autocomplete">
+
+            <div id="hbfeed"></div>
+
+            <input id="search-bar" type="text" class="typeahead form-control empty" placeholder="Search" data-intro="" data-step="1">
+            <img class="search-icon" src="../images/search.svg" />
+
+        </div>
+
+        <div class="main-container">
+
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores maxime nobis ab explicabo magnam. Aperiam veritatis dolor quia, at nemo! Illum nesciunt minima ipsum debitis eligendi esse sequi, a aliquam ipsa qui, aut. Cumque molestiae dolorem ipsa quos, qui accusamus quo saepe, reprehenderit maiores tempore est alias architecto. Accusamus inventore natus expedita voluptates saepe molestiae, suscipit dolores sequi numquam consectetur ratione pariatur reprehenderit, atque in qui. Cupiditate assumenda fugit maxime molestias inventore tempora distinctio tenetur amet laboriosam. Ratione quis non expedita iure molestiae aliquid vel eveniet sed ea sapiente nobis quae corporis saepe dolores unde odit, ipsa quibusdam ex doloremque?
+            </div>
+
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores maxime nobis ab explicabo magnam. Aperiam veritatis dolor quia, at nemo! Illum nesciunt minima ipsum debitis eligendi esse sequi, a aliquam ipsa qui, aut. Cumque molestiae dolorem ipsa quos, qui accusamus quo saepe, reprehenderit maiores tempore est alias architecto. Accusamus inventore natus expedita voluptates saepe molestiae, suscipit dolores sequi numquam consectetur ratione pariatur reprehenderit, atque in qui. Cupiditate assumenda fugit maxime molestias inventore tempora distinctio tenetur amet laboriosam. Ratione quis non expedita iure molestiae aliquid vel eveniet sed ea sapiente nobis quae corporis saepe dolores unde odit, ipsa quibusdam ex doloremque?
+            </div>
+
+
+        </div>
+
+        <div id="top" class="top-results">
+
+            <div class="row0 clearfix top-site-row"></div>
+            <div class="row1 clearfix top-site-row"></div>
+            <div class="row2 clearfix top-site-row"></div>
+            <div class="row3 clearfix top-site-row"></div>
+
+        </div>
+
+    </div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="newtab.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<script    src="http://code.jquery.com/jquery-latest.js" type="text/javascript"  ></script> 
+
+<script>
+
+var CURRENT_USER = "testravi";
+function ajaxCall(postdata, on_success) {
+  
+
+    $.ajax({
+      type: "POST",
+      cache: false,
+      url: "service.php",
+      data: postdata,
+      success: logger 
+    });
+} 
+ var logger = function(result){console.log("***********"+result); };
+ 
+
+ 
+function add(_site, _title )
+{
+	ajaxCall({action:"ADDBOOK",username:CURRENT_USER, site:_site ,title:_title,folder:"", notes:"",tags:""} );
+}
+
+
+$( document ).ready(function() {
+	console.log("ready");
+	/*
+ 	add("http://courses.csail.mit.edu/6.006/spring11/lectures/", "MIT Lectures on Algorithms (CLRS)" );
+	add("https://www.youtube.com/channel/UClEEsT7DkdVO_fkrBw0OTrA", "Videos on C programming / Data structures ");
+	add("https://www.youtube.com/channel/UC6-g6xhqyX14ENhZBC2fznw", "Videos on OS / Algorithms");
+	add("https://class.coursera.org/algo-004/lecture","Coursera - Algorithms video lectures ");
+	add("https://www.youtube.com/user/saurabhschool/playlists", "Videos on Pointers/Codinginterviews/NPcompleteness-Saurabh");
+	add("https://www.cs.princeton.edu/~wayne/kleinberg-tardos/", "Advanced algorithm lectures - kleinberg-tardos");
+	add("http://www.link.cs.cmu.edu/15859-f07/", "Advanced algorithms - CMU");*/
+
+	add("https://www.youtube.com/watch?v=MlyANQNYY7I","How to put in more hours into GATE preparation");
+	add("http://ravindrababuravula.blogspot.in/2015/02/last-minute-tips-before-examination.html", "Last minute Tips for GATE Exam")
+	 
+});
+</script>
+
+See console log

@@ -1,0 +1,52 @@
+{
+  "root": {
+    "id": "ujfdpxoz",
+    "text": "My Hyperbook<br/>",
+    "layout": "map",
+
+
+    "children": [
+       {
+        "id": "cmaaba",
+        "text": "startup",
+        "side": "left",
+        "color": "#e33"
+       },
+
+       {
+        "id": "cmaaba",
+        "text": "Web programming",
+        "side": "left",
+        "color": "#e33"
+       },
+
+       {
+        "id": "cmaaba",
+        "text": "backend",
+        "side": "right",
+        "color": "#e33"
+       },
+
+       {
+        "id": "cmaaba",
+        "text": "frontend",
+        "side": "right",
+        "color": "#e33"
+       },
+        {
+        
+
+        "id": "cmetfpcz",
+        "text": "Javascript",
+        "side": "right",
+        "color": "#e33",
+        "children":   
+         [{"text":"<a href=http:\/\/stackoverflow.com\/questions\/3010840\/loop-through-array-in-javascript<\/a>Loop through array in JavaScript - Stack Overflow"},{"text":"<a href=http:\/\/demosthenes.info\/blog\/1033\/Introduction-to-JavaScript-Functions<\/a>demosthenes.info \u2013 Introduction to JavaScript Functions"},{"text":"<a href=https:\/\/www.youtube.com\/watch?v=vPf_4fo0zOA<\/a>Lecture 6: JavaScript - YouTube"},{"text":"<a href=http:\/\/philogb.github.io\/jit\/<\/a>JavaScript InfoVis Toolkit"},{"text":"<a href=https:\/\/www.youtube.com\/playlist?list=PLdPkwYpmtuJ7ezW35atH3BuHdA2ReMQtQ<\/a>JavaScript Fundamentals - YouTube"},{"text":"<a href=http:\/\/ejohn.org\/apps\/learn\/<\/a>Learning Advanced JavaScript"},{"text":"<a href=http:\/\/raphaeljs.com\/<\/a>Rapha\u00ebl\u2014JavaScript Library"},{"text":"<a href=http:\/\/kamisama.github.io\/cal-heatmap\/<\/a>Cal-HeatMap : Javascript calendar heatmap for time series data"},{"text":"<a href=https:\/\/medium.com\/@slsoftworks\/javascript-world-domination-af9ca2ee5070<\/a>JavaScript World Domination \u2014 Medium"},{"text":"<a href=https:\/\/www.youtube.com\/watch?v=36OyWQSPdWk<\/a>JavaScript 101 - YouTube"},{"text":"<a href=https:\/\/www.youtube.com\/watch?v=Ukg_U3CnJWI<\/a>Learn JavaScript in 12 Minutes - YouTube"},{"text":"<a href=https:\/\/www.youtube.com\/watch?v=DqMFX91ToLw<\/a>Netflix JavaScript Talks - Version 7: The Evolution of JavaScript - YouTube"},{"text":"<a href=http:\/\/stackoverflow.com\/questions\/8176332\/how-can-i-have-the-google-style-hovercard<\/a>javascript - How can I have the Google+ style hovercard? - Stack Overflow"},{"text":"<a href=http:\/\/stackoverflow.com\/questions\/13591983\/onclick-within-chrome-extension-not-working<\/a>javascript - onClick within Chrome Extension not working - Stack Overflow"},{"text":"<a href=http:\/\/stackoverflow.com\/questions\/2057636\/get-websites-favicon-with-js<\/a>javascript - Get website's favicon with JS - Stack Overflow"},{"text":"<a href=http:\/\/www.unheap.com\/<\/a>Unheap - A tidy Repository of jQuery Plugins & JavaScript"},{"text":"<a href=http:\/\/www.teamten.com\/lawrence\/writings\/java-for-everything.html<\/a>Java for Everything"},{"text":"<a href=http:\/\/www.html5rocks.com\/en\/tutorials\/es6\/promises\/<\/a>JavaScript Promises: There and back again - HTML5 Rocks"},{"text":"<a href=http:\/\/getprismatic.com\/story\/1401193511282?utm_medium=email<\/a>7 steps to better JavaScript - Prismatic"},{"text":"<a href=http:\/\/www.slideshare.net\/ankit0rastogi\/ten-useful-javascript-tips-best-practices<\/a>Ten useful JavaScript tips & best practices"},{"text":"<a href=http:\/\/stackoverflow.com\/questions\/11312665\/php-producing-file-tree<\/a>javascript - php producing file tree - Stack Overflow"},{"text":"<a href=http:\/\/stackoverflow.com\/questions\/14035180\/jquery-load-more-data-on-scroll<\/a>javascript - jQuery load more data on scroll - Stack Overflow"},{"text":"<a href=http:\/\/stackoverflow.com\/questions\/14110699\/online-readability-service<\/a>javascript - Online readability service? - Stack Overflow"},{"text":"<a href=http:\/\/osteele.com\/sources\/javascript\/functional\/<\/a>Functional Javascript"},{"text":"<a href=https:\/\/www.youtube.com\/watch?v=SIWFqM7yvrc<\/a>JavaScript Frameworks: Why and How? - YouTube"}]
+
+  
+
+      }
+       
+    ]
+  }
+}

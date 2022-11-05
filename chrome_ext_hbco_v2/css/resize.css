@@ -1,0 +1,85 @@
+
+
+#example {
+        bottom: 0;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;		
+        top: 5px;
+        position:relative;
+        margin:0 auto;
+        width: 70%;	
+}
+.item{
+        position:absolute;	
+}
+.element {
+        background: none repeat scroll 0 0 #888888;
+        border-top-right-radius: 1.2em;
+        color: #222222;
+        float: left;
+        height: 98%;	
+        width: 98%;
+}	
+.element * {
+        margin: 0;
+        position: absolute;
+}
+.element .number {
+        color: rgba(255, 255, 255, 1);
+        font-size: 2.5em;
+        font-weight: bold;
+        right: auto;
+left: auto;
+        bottom: 0.5em;
+}	
+
+
+.element .symbol {
+        color: #FFFFFF;
+        font-size: 7.8em;
+        left: 0.2em;
+        line-height: 1em;
+        top: 0.4em;
+}
+.element .name {
+        bottom: 2em;
+        font-size: 2em;
+color: #ffffff;
+        left: 0.5em;
+text-align:center;     
+}
+.element .weight {
+        bottom: 0.5em;
+        font-size: 0.9em;
+        left: 0.5em;
+}
+.element:hover {
+        cursor: pointer;
+}
+.element:hover h3{
+        text-shadow: 0 0 10px white, 0 0 10px white;
+}
+.element:hover p {
+text-shadow: 0 0 20px white, 0 0 20px white;
+}
+.element.nonmetal {
+         background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+
+#button {
+        background-color: #666666;
+        border-radius: 8px 8px 8px 8px;
+        color: #FFFFFF;
+        padding: 6px;
+        position: relative;
+        z-index: 99999 !important;
+        top:5px;
+}
+#button:hover {
+        background-color: #000000;
+        color: #FFFFFF;
+        cursor: pointer;
+}

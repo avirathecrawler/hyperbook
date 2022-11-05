@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <title>New Tab - Hyperbook</title>
+ 
+  	    <link rel="stylesheet" href="newtab.css">
+
+ 
+</head>
+ 
+<body>
+    <div class="bg-holder">
+        <div class="bg">&nbsp;</div>
+        <div class="overlay">&nbsp;</div>
+        <br>
+    </div>
+    <div class="main-content">
+        <!--
+        <div class="options">
+            <img src="/resources/images/ent-apps.svg" alt="" class="apps">
+            <img src="/resources/images/ent-history.svg" alt="" class="history">
+            <img src="/resources/images/ent-bookmarks.svg" alt="" class="chrome-bookmarks">
+            <img src="/resources/images/ent-settings.svg" alt="" class="settings">
+            <span class="settings-holder">				
+				<ul id="optionsMenu" class="hidden">
+					<li id="restore">Restore Removed Top Sites</li>
+					<li id="custombgurlholder"><input placeholder="Custom Background URL" id="custombgurl" type="text"/></li>
+					<li id="restorebg">Restore Daily Background</li>
+					<li id="like">ENT on Facebook</li>
+					<li id="follow">ENT on Twitter</li>
+					<li id="developer">About Developer</li>
+				</ul>
+			</span>
+ 
+        </div>-->
+ 
+        
+        <div class="onoffswitch">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+            <label class="onoffswitch-label" for="myonoffswitch">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+         
+       
+        <!--
+        <div class="search-container jq-autocomplete">
+            <input id="search-bar" type="text" class="typeahead form-control empty" placeholder=""   data-step="1">
+            <img class="search-icon" src="../images/search-icon.png" />
+        </div> -->
+
+
+ 
+        <div id="top" class="top-results">
+            <!--
+            <div class="row0 clearfix top-site-row"></div>
+            <div class="row1 clearfix top-site-row"></div>
+            <div class="row2 clearfix top-site-row"></div>
+            <div class="row3 clearfix top-site-row"></div> -->
+             <div class="box" id="notifications-box">
+                  <div class="box-h1  ">   </div>
+                  <button id="clear-notifications">refresh</button>
+                   <div class="scrollable" id="notifications"> 
+                    <div class="box-text">
+                     <p>  </p>
+                    </div>
+
+                    </div>
+             </div>
+        </div>
+
+
+
+            
+        </div>
+        
+        </div>
+
+        <div id="boxes">
+       
+      </div>
+ 
+ 
+    </div>
+ 
+</body>
+ <script src="../js/jquery.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+ 
+<script src="newtab.js"></script>
+ 
+</html>

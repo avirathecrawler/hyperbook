@@ -1,0 +1,42 @@
+/* Styles written by Pramath */
+#search-bar {
+	background: rgba(255, 255, 255, 0.25) url("/resources/images/ent-EEEEEE-0.65.png");
+}
+
+#search-bar:hover {
+	background: rgba(255, 255, 255, 0.60) url("/resources/images/ent-EEEEEE-0.65.png");
+}
+
+.search-container {
+	margin: 30px auto 0 auto;
+}
+
+.text-center {
+	text-align: center;
+	position: relative;
+}
+
+#filter {
+	margin-top: 10px;
+	color: #FFF;
+}
+
+.filter-menu {
+	position: relative;
+	display: inline;
+	background: rgba(255, 255, 255, 0.75);
+	padding: 10px 15px;
+	color: #000;
+}
+
+.main-container {
+	margin: 50px auto;
+	text-align: center;
+	width: 900px;
+}
+/* written by Arvind*/
+.invisible{
+	display: none;
+}
+ 
+ 

@@ -1,0 +1,31 @@
+{
+   "background": {
+      "scripts": [ "js/jquery.min.js", "js/background.js" ]
+   },
+
+   // "chrome_url_overrides": {
+   //   "newtab": "tabpage.html"
+   //},
+
+     
+
+   "permissions": [ "idle", "tabs", "contextMenus", "bookmarks", "http://*.getbook.co/*", "topSites", "chrome://favicon/"  ],
+   
+   "browser_action": {
+      "default_icon": "images/insights.png",
+      "default_popup": "popup.html",
+      "default_title": "Add to HyperBook"
+   },
+   "description": "Hyperbook remembers all the information you browse and keeps it organized, archived and instantly searchable ",
+   "icons": {
+      "128": "images/insights.png"
+   },
+   "manifest_version": 2,
+   "name": "HyperBook",
+   "optional_permissions": [ "topSites" ],
+   //"options_page": "http://getbook.co",
+   
+   "short_name": "Hyperbook - information organized",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "15.3"
+}

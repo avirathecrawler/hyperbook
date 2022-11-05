@@ -1,0 +1,206 @@
+<!doctype html>
+ 
+<script src="../js/jquery.min.js"> </script>
+ <script src="popup.js"> </script>
+<script src="jquery.urlive.js"> </script>
+
+<link rel="stylesheet" href="popup.css" />
+<link rel="stylesheet" href="pcss3t.css" />
+<link rel="stylesheet" href="jquery.urlive.css" />
+<link rel="stylesheet" href="../css/pure.css">
+
+
+<!-- next 3 lines for editable -->
+<link href="../css/jqueryui-editable.css" rel="stylesheet"/>
+ <script src="../js/jquery-ui.min.js"> </script>
+<script src="../js/jqueryui-editable.js"></script>
+<script   src="../js/sha1.js" defer></script>
+ 
+ <link rel="stylesheet" type="text/css" href="../css/jquery.notebook.css">
+
+  
+  <script type="text/javascript" src="../js/jquery.notebook.js"></script>
+
+  
+
+ 	<div id="mainPopup" class="page">
+			 
+			<div class="pcss3t   pcss3t-effect-slide-top pcss3t-theme-2 ">
+
+				 <div class="title"> 
+ 									<span id=" " title= "click to change"> &nbsp;</span>
+ 					      <!--<span id="hb_profile" class="hb_public_page" > </span>-->
+					      <button class="viewhb pure-button pure-button-primary">View my Hyperbook</button>
+
+				 </div> 
+
+
+
+			 
+
+			
+				
+					 
+				<input type="radio" name="pcss3t" checked  id="tab1"class="tab-content-first">
+				<label for="tab1" title="Info"><i class="icon-bookmark"></i>&nbsp;</label>
+			 
+			
+				<input type="radio" name="pcss3t" id="tab2" class="tab-content-2">
+				<label for="tab2" title="Info"><i class=" icon-folder-open"></i>&nbsp;  <span id="hb_folder1" > folder </span> 
+ 				</label>  
+			
+				 
+				<input type="radio" name="pcss3t" id="tab3" class="tab-content-3">
+				<label for="tab3" title="Help" ><i class=" icon-question-sign"></i>&nbsp;shared</label>  
+				 
+				<input type="radio" name="pcss3t" id="tab4" class="tab-content-4">
+				<label for="tab4" title="Settings" ><i class=" icon-user"></i> 
+					<span id="hb_profile"  > user</span> 
+				</label> 
+				 
+				
+				<ul class="tabs">
+					<li class="tab-content tab-content-first ">
+							<div class="hb_title">
+								
+
+							   
+
+								
+								<span id="result_info"></span>
+				        	   <span id="hb_add"></span>
+								<!--<span id="toggle_add"> <img src="../images/star1.jpg"/>  </span>-->
+								<span id="hb_title"> Welcome to Hyperbook. You can add any page by clicking the popup icon </span>  
+
+                        	  
+
+                    	</div>    	 
+
+                    		 <!-- <span class="hb_delete boxed">Undo</span></div> -->
+
+                    		 <br><br>
+
+
+                     
+
+						
+   
+ 					</li>
+ 
+					<li class="tab-content tab-content-2  ">
+        				
+
+							 
+					</li>
+			  
+					 
+ 					<li class="tab-content tab-content-3  ">
+ 					        <!-- <textarea class="note-text"> </textarea> -->
+ 							<span class="help1">  Overview </span>
+ 							<span id="preview1"> Preview </span>
+ 							<span id="tags1"> Tags </span>
+ 							 								 							<ul id="hb_tags"> tags </ul>
+
+
+
+ 							<div class="details"> 
+
+	    						<a id="the_url"  > </a>
+								<div class="urlive-container">
+								</div>
+							</div>
+					
+					</li> 
+ 
+
+					<li class="tab-content tab-content-4">
+
+				 				
+				 					<div>  
+				 				    	<br>
+				 				    	<div> <b> Profile Name  </b>
+											<a href="#" id="setpublic" data-type="text" data-pk="1"  title= "click to change" class="editable editable-click"></a>
+				 				    	<br> 
+ 
+				 				    	 </div>
+				 				    	 <br>
+
+				 				    	 <div> <b> Set Password  </b>
+											 <a href="#" id="setpasswd" data-type="text" data-pk="1"  title="click to change" class="editable editable-click"></a>
+				 				    	<br><br>
+
+				 				    	<div id="setprofile_msg"> </div>
+
+
+ 
+				 				    	 </div>
+				 				    	 <br>
+
+ 								            
+								       <!--      
+						              <div class="clearfix">
+						                Set Password <input type="password" placeholder="Password">
+						                 <button class="btn primary" type="submit">Save</button>
+						              </div>
+						              -->
+						            
+  
+				 				    <br>
+
+
+
+				 				    <!--
+				 				    <div>
+				 				    
+					 				   	<div><b> Email </b>  <a href="#" id="setemail" data-type="text" data-pk="1" data-title="Email" class="editable editable-click"> email</a> </div>
+					 				   	 Required to <span title="access  data across multiple computers"> <b> Synchronize </b> </span> 
+					 				   	 or <span title="get data back after browser or computer reinstall "> <b> Recover </b> </span> data 
+					 				</div>
+					 				   
+					 				   <br>
+
+				 				   <div class="synrec" > Recover/Synchronize now </div>  
+
+				 				  
+				 				   <div class="hb_email">
+ 				 					Kindly enter the access code  sent to your email  
+				 				    <a href="#" id="access_code" data-type="text" data-pk="1" data-title=" " class="editable editable-click"> access-code</a>  
+				 				   <br><br>
+
+				 				   -->
+				 				</div>
+				 			
+
+ 
+				 				   
+
+				
+					</li>
+					
+				
+				
+ 				</ul>
+				 
+			</div>
+			<!--/ tabs -->
+
+<!--
+<div class="notes">
+   							  <img class="notes_icon"  title="Add your notes" src="../images/notes-icon.png" width="20px"/> 
+
+                        	   <div class="editor">
+								
+ 					           
+					        	</div>
+					        	<br>
+					        	 <button class="hb_save   pure-button pure-button-primary">Save</button>
+					        	 <button class="hb_cancel   pure-button button-secondary">Discard</button>
+</div> -->
+
+
+							
+
+					
+		</div>
+
+ 	 

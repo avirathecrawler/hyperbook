@@ -1,0 +1,39 @@
+.tooltip-frame {
+  position: absolute;
+  z-index: 100;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  background: #FFF;
+  max-width: 300px;
+}
+
+.tooltip-frame .tip {
+  border-style: solid;
+  position: absolute;
+}
+
+.tooltip-frame .tip {
+  margin-left: -8px;
+  border-width: 9px;
+}
+
+.tooltip-frame.tooltip-bottom {
+  margin-top: 8px;
+}
+
+.tooltip-frame.tooltip-bottom .tip {
+  border-color: transparent transparent #FFF transparent;
+  border-width: 0 9px 9px 9px;
+  top: -8px;
+}
+
+.tooltip-frame.tooltip-top {
+  margin-top: -8px;
+}
+
+.tooltip-frame.tooltip-top .tip {
+  border-color: #FFF transparent transparent transparent;
+  border-width: 9px 9px 0 9px;
+  bottom: -8px;
+}

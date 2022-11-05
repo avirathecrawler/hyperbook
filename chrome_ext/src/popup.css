@@ -1,0 +1,295 @@
+ 	
+#mainPopup {
+	padding: 10px;
+	
+	width: 450px;
+   	font-family: Helvetica, Ubuntu, Arial, sans-serif;
+
+	font-size: 15px;
+
+	
+}	
+#btn_add {
+	margin-top: 2px;
+	margin-right: 30px;
+	float: right;
+}
+#toggle_add{
+	padding-right: 10px;
+}
+
+#toggle_add img{
+	width: 20px;
+	height: 20px;
+}
+ 
+ .hb_cancel {
+  	font-size: 70% !important;
+    color: white !important;
+    border-radius: 4px !important;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2) !important;;
+        background: #7D7D7D !important;
+
+ }
+ 
+ .hb_save{
+ 
+ 	 	font-size: 70% !important;
+  	 	      color: white !important;
+    border-radius: 4px !important;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2) !important;;
+ 
+ }
+
+.editor{
+	border: 1px solid #DDD;
+	display: none;
+}
+
+ 
+
+.title{
+	font-size: 22px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	color: #FFF; 
+	background:  #0098B3 !important ; //#14B9D6;
+	//background:rgba(0,0,0,0.2);
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: left;
+	margin: 0;
+	padding-left: 10px;
+}
+
+.subheading{
+	font-size: 14px;
+	color: #FFF;
+	font-weight: 400;
+}
+
+.details
+{            
+    background:#fff ;    
+    position:absolute ;
+    width:375px;
+     
+    //padding:2em 10px 10px; /*leave enough padding on top for the name*/   
+ }
+.details img
+{
+    width:100px;    
+    height: 100px;
+    //float:right;
+    //margin-top:-1em;
+}
+
+#hb_tags{
+	  color: #3e6d8e;
+	background-color: #e4edf4;
+	  font-size: 12px;
+}
+
+#hb_tags > li
+{
+	 display: inline-block;
+}
+#hb_tags li:after {
+  content: ", ";
+  padding-right: 5px;
+}
+
+#hb_folder{
+	margin-top: 10px;
+	color: #2A00E1;
+	padding-right: 5px;
+
+}
+
+#hb_title{
+ 	 
+ 
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-size:  15px;
+       font-weight: bold;
+
+
+    min-height: 30px;
+ 
+    text-align: left;
+ 
+    line-height: 30px;
+
+    width: 100%;
+ 
+}
+
+#hb_help_info{
+	float: right;
+	display: none;
+}
+.newfolder{
+	color: #3e6d8e;
+     background-color: #fff;
+}
+
+
+.folderfilter{
+	background-color:  #e4edf4;
+}
+
+.hb_public_page
+{
+	cursor: pointer; cursor: hand; 
+	//text-decoration: underline;
+}
+.hb_options_page
+{
+	cursor: pointer; cursor: hand; 
+	//text-decoration: underline;
+}
+.boxed
+{
+		border: 1px solid #DDD;
+	border-radius: 6px;
+
+}
+
+.hb_title{
+ 
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-size:  15px;
+     min-height: 30px;
+    text-align: left;
+    line-height: 30px;
+    width: 100%;
+ 
+}
+.note-text {
+
+    margin: 0;
+
+    background: #EDFAFF;
+
+    border: none;
+
+    font-family:"Helvetica", "Arial", "sans-serif";
+
+    font-size: 16px;
+
+    width: 95%;
+
+    resize: none;
+
+    overflow: auto;
+
+    outline: none;
+
+    padding: 2px;
+
+    height: 90%
+
+}
+ 
+
+
+
+/*tree*/
+
+ 
+.container{width: 100% ; }
+.menu{float:left;width:150px;;border-right:1px solid #cecece; border-bottom:1px solid #cecece; border-left:1px solid #cecece;}
+.content{float:left ;padding:2px; }
+
+.wrap {
+    width: 100%;
+ 
+
+	  font:1em/1.625em "lucida grande","lucida sans unicode", sans-serif; 
+ 	  font-size: 14px;
+	font-size-adjust:none;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+
+}
+
+.floatleft {
+    float:left; 
+    width: 50%;
+ }
+
+.floatright {
+    float: right;
+     height: 400px;
+    width: 50%;
+}
+ 
+ .floatright input {
+  maxlength: 10;
+}
+
+input[type="text"] {
+    width: 100px;
+}
+
+#close_msg
+{
+	color: #646464;
+	display: none;
+}
+
+.hb_email{
+	display: none;
+}
+
+.msg2
+{
+	display: none;
+}
+
+#hb_heading{
+	cursor: pointer;
+	padding-top: 5px;
+	padding-right: 20px;
+}
+#hb_profile{
+	cursor: pointer;
+	/*display: none;*/
+	color:#0098B3;
+}
+
+.pure-button-primary
+{
+	font-size:13px !important;
+	margin-right: 5px;
+	border-radius:10px !important;
+	background-color: #995c00 !important;
+}
+.viewhb
+{
+	float:right;
+}
+
+.notes_icon
+{
+	margin-top: 10px;
+	float: left;
+}
+
+.jquery-notebook
+{
+	width:420px;
+	margin-top:10px;
+	margin-left: 25px;
+}
+ul li.tab-content
+{
+	overflow-y:hidden !important;
+	min-height: 140px !important;
+}
+
+ul.tabs
+{
+	min-height: 140px !important;
+}

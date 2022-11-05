@@ -1,0 +1,100 @@
+<script    src="http://code.jquery.com/jquery-latest.js" type="text/javascript"  ></script> 
+
+<script>
+function ajaxCall(postdata, on_success) {
+  
+
+    $.ajax({
+      type: "POST",
+      cache: false,
+      url: "service_extn.php",
+      data: postdata,
+      success: logger 
+    });
+} 
+ var logger = function(result){console.log("***********"+result); };
+
+
+function ReadServer(hash, on_success) {
+  
+	$.ajax({
+	      type: "GET",
+	      cache: false,
+	      url: "http://getbook.co:3000/dom/"+hash,
+	      success: function (response) {
+	      	 console.log(response);
+	      	}
+	      });	
+          
+} 
+
+function SuggestedTags(hash, on_success) {
+  
+	$.ajax({
+	      type: "GET",
+	      cache: false,
+	      url: "http://getbook.co:3000/tags/"+hash,
+	      success: function (response) {
+	      	 console.log(response);
+	      	}
+	      });	
+          
+} 
+
+
+
+function ComputeDOM(_site,indx) {
+
+    $.ajax({
+      type: "POST",
+      cache: false,
+      url:"http://getbook.co:8082",
+       data: {url:_site},
+        success: function (response) {
+            console.log(response);
+        }
+      });
+}
+
+
+
+ 
+function addurl()
+{
+	ajaxCall({action:"ADD",username:"arvind",site:"www.test.com" ,title:"TESTING",folder:"fold1", notes:"abc",tags:"abc"} );
+}
+
+function urlinfo()
+{
+	ajaxCall({action:"URLINFO",site:"http://yourstory.com/2015/05/top-enterprise-startups-india/" });
+}
+
+function usertags()
+{
+	  var tags = [];
+	  tags.push('tag1');
+	  tags.push('tags2');
+      ajaxCall({action:"USERTAGS",username:"arvind",site:"www.test.com", tags: JSON.stringify(tags)});
+
+}
+
+function TriggerDB()
+{
+	  ajaxCall({action:"TRIGGERDB"});	
+}
+$( document ).ready(function() {
+	console.log("ready");
+	/*
+	addurl();
+	urlinfo();
+	usertags();
+	ComputeDOM("http://www.bbc.com/news/science-environment-34960051");
+	ReadServer("70477d38a907d62b2c1728d27b9195e52a43f934");
+	SuggestedTags("70477d38a907d62b2c1728d27b9195e52a43f934");
+	*/
+	TriggerDB();
+	
+});
+</script>
+
+See console log
